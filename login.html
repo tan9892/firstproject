@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>登陆注册</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="assets/css/login.css" />
+    <link rel="stylesheet" href="assets/lib/layui/css/layui.css" />
 </head>
+
 <body>
-    
+    <!-- 头部的logo -->
+    <div class="layui-main"><img src="assets/images/logo.png" alt=""></div>
+
+    <div class="loginAndRegBox">
+        <!-- 标题 -->
+        <div class="title-box"></div>
+
+        <!-- 登陆的div -->
+        <div class="login-box">
+            <!-- 表单 -->
+            <form class="layui-form" action="">
+
+                <!-- 账号 -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-username"></i>
+                    <input type="text" name="username" lay-verify="title" autocomplete="off" placeholder="请输入你的账户"
+                        class="layui-input">
+
+                </div>
+
+                <!-- 密码 -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-password"></i>
+                    <input type="password" name="password" lay-verify="title" autocomplete="off" placeholder="请输入你密码"
+                        class="layui-input">
+                </div>
+
+                <!-- 登陆按钮 -->
+                <div class="layui-form-item">
+                    <button class="layui-btn layui-btn-fluid layui-bg-blue" lay-submit>登陆</button>
+                </div>
+
+                <!-- 登陆的div -->
+                <div class="layui-form-item links">
+                    <a href="#" id="link_reg">去注册账号</a>
+                </div>
+            </form>
+        </div>
+
+
+        <!-- 注册的div -->
+        <div class="reg-box"><a href="#" id="link_login">去登陆</a></div>
+    </div>
+
+
+    <!-- 导入jQuery -->
+    <script src="assets/lib/jquery.js"></script>
+
+    <!-- 导入自己的js脚本 -->
+    <script src="assets/js/login.js"></script>
 </body>
+
 </html>
